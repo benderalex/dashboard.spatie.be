@@ -2,6 +2,13 @@
 
 This repo contains the source code of our dashboard.
 
+
+## ChangeLog
+
+02-07-2019 - added Jira jobs
+
+
+
 ## Example
 
 <img style="max-width:100%; height: auto" src="http://spatie.github.io/dashboard.spatie.be/images/screenshot20181118.png">
