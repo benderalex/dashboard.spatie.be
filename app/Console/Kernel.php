@@ -2,6 +2,7 @@
 
 namespace App\Console;
 
+use App\Console\Components\Jenkins\FetchJenkinsJobsRequest;
 use Illuminate\Console\Scheduling\Schedule;
 use App\Console\Components\Trains\FetchTrainsCommand;
 use App\Console\Components\TeamMember\FetchTasksCommand;
@@ -21,6 +22,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command(FetchTrainsCommand::class)->everyMinute();
+        $schedule->command(FetchJenkinsJobsRequest::class)->everyMinute();
         $schedule->command(FetchCalendarEventsCommand::class)->everyMinute();
         $schedule->command(FetchCurrentTracksCommand::class)->everyMinute();
         $schedule->command(SendHeartbeatCommand::class)->everyMinute();

@@ -14,6 +14,7 @@ import Twitter from './components/Twitter';
 import Uptime from './components/Uptime';
 import Velo from './components/Velo';
 import TileTimer from './components/TileTimer';
+import JenkinsJobs from './components/JenkinsJobs';
 
 new Vue({
     el: '#dashboard',
@@ -30,6 +31,7 @@ new Vue({
         Uptime,
         Velo,
         TileTimer,
+        JenkinsJobs,
     },
 
     created() {
